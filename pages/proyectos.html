@@ -3,80 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link a googlefont-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Agustina Valdemarca | Ingeniera Forestal</title>
+    
+    <title>Agustina Valdemarca | Proyectos</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img class="img_logo" src="../img/logoAgu.png" alt="logo personal">
+
+    <!-- Encabezado y Navegación -->
+    <header class="container text-center my-4">
+        <div class="logo mb-3">
+            <img class="img_logo rounded" src="../img/logoAgu.png" alt="logo personal">
         </div>
         <h1>Agustina Valdemarca</h1>
-        <br>
         <h2>Ingeniera Forestal & Doctorando en Ciencias y Tecnologias Forestales</h2>
-        <br>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre mí</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publicaciones.html">Publicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <br>
-        <hr>
     </header>
 
-    <main>
-        <div>
-            <section class="seccion">
-                <h2>Mis Proyectos</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae laudantium officiis ipsam, nemo fuga corrupti animi ipsa sint assumenda repellat iure, sed explicabo fugit repudiandae illum blanditiis beatae inventore itaque odio libero reiciendis soluta, atque cum! Iste impedit rerum provident quo accusamus aspernatur cum asperiores, hic fugiat quae, explicabo consectetur.
-                </p>
-            </section>
-        </div>
-        <br>
-        <section class="seccion">
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <!-- Sección de Proyectos -->
+        <section class="text-center p-4 bg-light rounded mb-4">
+            <h2>Mis Proyectos</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae laudantium officiis ipsam, nemo fuga corrupti animi ipsa sint assumenda repellat iure.
+            </p>
+        </section>
+
+        <!-- Proyecto 1 -->
+        <section class="bg-light rounded p-4 mb-4">
             <h3>Proyecto Restauración de Bosques Nativos en Santiago del Estero</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ullam earum commodi, totam, vero consequatur similique ex cumque voluptatibus soluta vitae reprehenderit, modi quidem voluptas velit amet facilis ab corporis molestias perspiciatis ut. Nisi laudantium autem velit quibusdam ipsam dolorem est quo doloribus. Quasi tempora corrupti ab temporibus voluptas quis amet eaque ad optio nostrum esse nihil eveniet ut nisi, maiores praesentium, veritatis sunt eius repellendus enim placeat laborum? Ratione magnam atque suscipit ea tempora amet optio dolores soluta? Maxime.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ullam earum commodi, totam, vero consequatur similique ex cumque voluptatibus soluta vitae reprehenderit.
             </p>
-            <br>
-            <img class="img-proyec" src="../img/proyecto.jpg" alt="Restauración de Bosques Nativos" class="proyecto-img">
-            <img class="img-proyec" src="../img/proyecto2.jpg" alt="Restauración de Bosques Nativos" class="proyecto-img">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded mb-3" src="../img/proyecto.jpg" alt="Restauración de Bosques Nativos">
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded mb-3" src="../img/proyecto2.jpg" alt="Restauración de Bosques Nativos">
+                </div>
+            </div>
         </section>
-        <hr>
-        <section class="seccion">
+
+        <!-- Proyecto 2 -->
+        <section class="bg-light rounded p-4 mb-4">
             <h3>Proyecto Conservación de Ecosistemas en Zonas Protegidas</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem unde laboriosam ducimus saepe culpa quasi, dolores minima. Neque, tenetur animi! Doloremque totam voluptate eos assumenda ad possimus optio iste nostrum. Exercitationem ab non pariatur voluptates, praesentium delectus! Optio saepe ipsam, iure tempore voluptatem esse totam iste labore ab enim, quisquam voluptates quo, impedit iusto pariatur ex. Odio voluptatibus laudantium quo impedit accusamus voluptatum laborum sunt, dolorum quis neque doloribus nam vel sit tempore ut dignissimos qui amet officia aut!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem unde laboriosam ducimus saepe culpa quasi, dolores minima.
             </p>
-            <br>
-            <img class="img-proyec" src="../img/proyecto1.jpg" alt="Restauración de Bosques Nativos" class="proyecto-img">
-            <img class="img-proyec" src="../img/proyecto3.jpg" alt="Conservación de Ecosistemas" class="proyecto-img">
-            <img class="img-proyec" src="../img/proyecto4.jpg" alt="Restauración de Bosques Nativos" class="proyecto-img">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded mb-3" src="../img/proyecto1.jpg" alt="Conservación de Ecosistemas">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded mb-3" src="../img/proyecto3.jpg" alt="Conservación de Ecosistemas">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded mb-3" src="../img/proyecto4.jpg" alt="Conservación de Ecosistemas">
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Pie de Página -->
+    <footer class="container text-center mt-5 py-4 bg-light">
         <h4>📧 Email: aguvaldemarca@forestal.com</h4>
         <h4>📞 Teléfono: +54 123-456-890</h4>
         <h4>🌐 LinkedIn: linkedin.com/in/aguvaldemarca</h4>
     </footer>
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
