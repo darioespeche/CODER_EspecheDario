@@ -3,89 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link a googlefont-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Agustina Valdemarca | Ingeniera Forestal</title>
+    
+    <title>Agustina Valdemarca | Sobre Mí</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img class="img_logo" src="../img/logoAgu.png" alt="logo personal">
+
+    <!-- Encabezado y Navegación -->
+    <header class="container text-center my-4">
+        <div class="logo mb-3">
+            <img class="img_logo rounded" src="../img/logoAgu.png" alt="logo personal">
         </div>
         <h1>Agustina Valdemarca</h1>
-        <br>
         <h2>Ingeniera Forestal & Doctorando en Ciencias y Tecnologias Forestales</h2>
-        <br>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publicaciones.html">Publicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <br>     
-        <hr>
     </header>
 
-    <main>
-        <section class="seccion">
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <!-- Sección de Presentación -->
+        <section class="text-center p-4 bg-light rounded mb-4">
             <h2>Bienvenidos a mi Sitio Profesional</h2>
-
-                <p>
-                Soy Agustina Valdemarca, Ingeniera Forestal Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis. Minus nobis deleniti vel? Sed ratione aut dolorum possimus, nihil nulla sequi quisquam, rerum iusto id minima distinctio explicabo? Quibusdam sequi omnis praesentium unde aut itaque. Inventore quisquam molestiae, eius neque quibusdam, possimus modi eaque autem sequi optio aliquid saepe ad consequatur velit, iure incidunt perferendis. Quidem pariatur aut velit eos ducimus voluptas consequuntur quo a optio eaque facere numquam suscipit, temporibus quia repellat quae neque in autem, esse tenetur? 
-                </p>
-                <img src="../img/agu2.jpeg" alt="fotoPresentacion" class="perfil-img">
+            <p>
+                Soy Agustina Valdemarca, Ingeniera Forestal. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis.
+            </p>
+            <img src="../img/agu2.jpeg" alt="fotoPresentacion" class="perfil-img img-fluid rounded my-3">
         </section>
-        <br>
-        <section class="seccion">
-            <h2>Educacion y Formacion</h2>
-            <ul">
-                <li><strong>Ingeniera Forestal</strong> - Universidad Nacional de Santiago del Estero (2022)</li>
-                <br>
-                <li><strong>Doctorando en Ciencias y Tecnologias Forestales</strong> - CONICET (Actual)</li>
-                <br>
-                <li><strong>Diplomada en Mineria de Datos</strong> - CONICET (2023)</li>
+
+        <!-- Sección de Educación y Formación -->
+        <section class="bg-light rounded p-4 mb-4">
+            <h2>Educación y Formación</h2>
+            <ul class="list-unstyled">
+                <li class="my-2"><strong>Ingeniera Forestal</strong> - Universidad Nacional de Santiago del Estero (2022)</li>
+                <li class="my-2"><strong>Doctorando en Ciencias y Tecnologías Forestales</strong> - CONICET (Actual)</li>
+                <li class="my-2"><strong>Diplomada en Minería de Datos</strong> - CONICET (2023)</li>
             </ul>
         </section>
-        <br>
-        <section class="seccion">
-            <h2>Experiencia Profesional</h2>
-            <article>
-                <h3>Investigadora en Proyectos de Restauración Forestal</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ratione dicta nostrum distinctio! Eos corporis modi quasi eligendi. Culpa voluptatibus ex corporis rerum reiciendis similique enim repellendus, beatae eaque quaerat, dolorum quos illo non sequi, commodi pariatur reprehenderit est ea?</p>
-            </article>
-            <article>
-                <h3>Consultora en Evaluación de Impacto Ambiental</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita placeat incidunt iusto alias modi sit non, aperiam quibusdam ipsa doloremque quos vel voluptatibus, saepe molestiae, quis laborum reprehenderit harum commodi! At iusto facilis esse quo amet. Blanditiis porro magni veritatis?</p>
-            </article>
-            <article>
-                <h3>Coordinadora de Programas de Educación Ambiental</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia id debitis qui laudantium animi nostrum tenetur neque aliquam ullam illum eveniet illo cupiditate corrupti omnis voluptas maiores expedita recusandae inventore, dolor corporis obcaecati odit! Ab accusamus sequi quaerat dolore distinctio.</p>
-            </article>
-        </section>
-        
-        <hr>
 
+        <!-- Sección de Experiencia Profesional -->
+        <section class="bg-light rounded p-4 mb-4">
+            <h2>Experiencia Profesional</h2>
+            <div class="row">
+                <article class="col-md-4 mb-4">
+                    <h3>Investigadora en Proyectos de Restauración Forestal</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ratione dicta nostrum distinctio!</p>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <h3>Consultora en Evaluación de Impacto Ambiental</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita placeat incidunt iusto alias.</p>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <h3>Coordinadora de Programas de Educación Ambiental</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia id debitis qui laudantium.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- Pie de Página -->
+    <footer class="container text-center mt-5 py-4 bg-light">
         <h4>📧 Email: aguvaldemarca@forestal.com</h4>
         <h4>📞 Teléfono: +54 123-456-890</h4>
         <h4>🌐 LinkedIn: linkedin.com/in/aguvaldemarca</h4>
     </footer>
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

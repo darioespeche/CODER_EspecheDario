@@ -3,60 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link a googlefont-->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    
     <title>Agustina Valdemarca | Ingeniera Forestal</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img class="img_logo" src="./img/logoAgu.png" alt="logo personal">
+
+    <!-- Encabezado y Navegación -->
+    <header class="container text-center my-4">
+        <div class="logo mb-3">
+            <img class="img_logo rounded" src="./img/logoAgu.png" alt="logo personal">
         </div>
         <h1>Agustina Valdemarca</h1>
-        <br>
         <h2>Ingeniera Forestal & Doctorando en Ciencias y Tecnologias Forestales</h2>
-        <br>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/sobremi.html">Sobre mí</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/publicaciones.html">Publicaciones</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/sobremi.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/publicaciones.html">Publicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <br>
-        <hr>
     </header>
 
-    <main>
-        <section class="seccion">
+    <!-- Contenido Principal -->
+    <main class="container">
+        <section class="seccion text-center p-4 bg-light rounded my-4">
             <h2>Bienvenidos a mi Sitio Profesional</h2>
             <p>
-                Soy Agustina Valdemarca, Ingeniera Forestal Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque assumenda eligendi quasi aspernatur veniam ut laborum dolores nemo. Quo quidem doloribus voluptatem assumenda asperiores dolorem, non voluptas, aliquam temporibus maiores sunt, nisi possimus quam perspiciatis ab voluptate officia voluptatibus explicabo id iusto debitis. Unde tempora porro deleniti, perferendis maiores quas..
+                Soy Agustina Valdemarca, Ingeniera Forestal. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda eligendi quasi aspernatur veniam ut laborum dolores nemo. Quo quidem doloribus voluptatem assumenda asperiores dolorem, non voluptas, aliquam temporibus maiores sunt, nisi possimus quam perspiciatis ab voluptate officia voluptatibus explicabo id iusto debitis.
             </p>
-            <img class="imagenGeneral" src="./img/agu1.jpg" alt="Agustina trabajando en campo">
+            <img class="img-fluid rounded my-3" src="./img/agu1.jpg" alt="Agustina trabajando en campo">
         </section>
-        <hr>
     </main>
 
-    <footer>
+    <!-- Pie de Página -->
+    <footer class="container text-center mt-5 py-4 bg-light">
         <h4>📧 Email: aguvaldemarca@forestal.com</h4>
         <h4>📞 Teléfono: +54 123-456-890</h4>
         <h4>🌐 LinkedIn: linkedin.com/in/aguvaldemarca</h4>
-        <br>
     </footer>
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
