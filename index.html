@@ -14,6 +14,10 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
     <title>Agustina Valdemarca | Ingeniera Forestal</title>
 </head>
@@ -46,8 +50,13 @@
 
     <!-- Contenido Principal -->
     <main class="container">
-        <section class="seccion text-center principal ">
-            <h2>Bienvenidos a mi Sitio Profesional</h2>
+        <section class="bienvenida text-center" data-aos="fade-up">
+                <h2>Bienvenidos a mi Sitio Profesional</h2>
+                <p>Un lugar para explorar mi trabajo como Ingeniera Forestal.</p>
+              </section>
+            <section class="seccion text-center principal ">
+            
+            <br>
             <p class="text-center">
                 Soy Agustina Valdemarca, Ingeniera Forestal y Doctoranda en Ciencias y Tecnologías Forestales. Mi pasión por la conservación y restauración de los ecosistemas naturales me ha llevado a colaborar en proyectos de impacto que promueven el desarrollo sostenible y la preservación de la biodiversidad.
             </p>
@@ -68,5 +77,11 @@
     <!-- Bootstrap JS y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
 </body>
 </html>
