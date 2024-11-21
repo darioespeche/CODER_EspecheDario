@@ -1,0 +1,42 @@
+@use '../base/variables' as vars;
+header {
+    padding: vars.$padding;
+    background-color: vars.$primary-color;
+
+    .logo {
+       text-align: center;
+       padding: 10px;
+ 
+       img {
+          border-radius: 30px;
+          width: 150px;
+       }
+    }
+ 
+    nav {
+       ul {
+          list-style: none;
+          text-align: center;
+ 
+          li {
+             display: inline-block;
+             margin: 10px;
+ 
+             a {
+                color: vars.$text-color;
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 10px;
+                background-color: vars.$secondary-color;
+                border-radius: vars.$border-radius;
+ 
+                &:hover {
+                   background-color: vars.$primary-color;
+                   color: white;
+                }
+             }
+          }
+       }
+    }
+ }
+ 
