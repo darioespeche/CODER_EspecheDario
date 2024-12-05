@@ -14,6 +14,18 @@ header {
   padding: 20px;
   background-color: rgba(53, 79, 82, 0.4588235294);
 }
+header h1, header h2 {
+  color: #2F3E46;
+  text-align: center;
+  margin: 0;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
 header .logo {
   text-align: center;
   padding: 10px;
@@ -39,15 +51,52 @@ header nav ul li a {
   border-radius: 10px;
 }
 header nav ul li a:hover {
-  background-color: #c7e4cd;
+  background-color: #84A98C;
   color: white;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
+  header .logo img {
+    width: 100px;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+    padding: 8px;
+  }
 }
 
 footer {
   background-color: rgba(53, 79, 82, 0.4588235294);
   color: #2F3E46;
-  text-align: center;
   padding: 20px;
+  text-align: center;
+}
+footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2F3E46;
+}
+footer .d-flex {
+  gap: 99px;
+}
+footer i {
+  font-size: 60px;
+  color: #383526;
+  transition: color 0.3s ease;
+}
+footer a:hover i {
+  background-color: #84A98C;
+  color: white;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
 }
 
 .button {

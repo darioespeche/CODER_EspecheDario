@@ -3,6 +3,33 @@
 footer {
    background-color: vars.$primary-color;
    color: vars.$text-color;
-   text-align: center;
    padding: vars.$padding;
+   text-align: center;
+
+   h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: vars.$text-color;
+   }
+
+   .d-flex {
+      gap: 99px; // Espaciado uniforme entre los íconos
+   }
+
+   i {
+      font-size: 60px; // Tamaño del ícono
+      color: #383526; // Color inicial
+      transition: color 0.3s ease; // Animación al pasar el cursor
+   }
+
+   a:hover i {
+      background-color: vars.$secondary-color;
+      color: white;
+      text-decoration: none;
+   }
+
+   a {
+      text-decoration: none; // Sin subrayado
+   }
 }
